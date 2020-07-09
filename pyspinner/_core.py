@@ -39,7 +39,7 @@ class Spinner:
             self._updated_value += value
             if self.show_progress:
                 self._updated_tmpl = (
-                    f"Processed {self._updated_value} {self._units_text}"
+                    f"(processed {self._updated_value} {self._units_text})"
                 )
         except TypeError as exc:
             if "unsupported operand" in repr(exc):
